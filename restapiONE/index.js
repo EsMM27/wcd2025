@@ -43,5 +43,6 @@ app.route('/team/:id?')
 
 
 var myServer = app.listen(3000, function() {
-  console.log("Server listening on port 3000");
+  const port = myServer.address().port;
+  console.log(`Server listening on http://localhost:${port}`);
 });

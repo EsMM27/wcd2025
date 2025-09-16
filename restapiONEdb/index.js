@@ -28,16 +28,19 @@ app.route('/team/:id?')
     model.getTeam(req, res);
   })
   .post(function (req, res) { // add
-    // add solution here
+    model.addTeam(req, res);
   })
   .put(function (req, res) { // edit
-    // add solution here
+    model.updateTeam(req, res);
   })
   .delete(function (req, res) { // delete
-    // add solution here
+    model.deleteTeam(req, res);
+
   });  
 
 
 var myServer = app.listen(3000, function() {
-  console.log("Server listening on port 3000");
+  const port = myServer.address().port;
+  console.log(`Server listening on http://localhost:${port}`);
 });
+
