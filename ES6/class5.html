@@ -1,0 +1,35 @@
+<html>  
+<head>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.js"></script> -->
+  <!-- <script type="text/babel">    -->
+</head>
+<body>
+  <code id='code'></code>
+
+  <script>   
+    class Person {    
+      constructor(name,age) {
+        this.name=name;
+        this.age=age;
+      }
+      info() { 
+          console.log(`[name=${this.name}, age=${this.age}]`); 
+      }      
+      get getAge(){
+        return this.age; 
+      }
+      set setAge(age){
+        this.age=age;
+      } 
+    }
+    var person = new Person("Joe",21);    
+    console.log(person.getAge);
+    person.setAge=22;
+    person.info(); 
+
+    document.getElementById('code').innerHTML=`${person.getAge}<br>[name=Joe, age=22]`;
+  </script>
+
+
+</body>
+</html>

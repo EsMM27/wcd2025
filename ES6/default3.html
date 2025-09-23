@@ -1,0 +1,20 @@
+<html>  
+<head>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.js"></script> -->
+  <!-- <script type="text/babel">    -->
+</head>
+<body>
+  <code id='code'></code>
+
+  <script>   
+    function add(x=0,y=0) {
+        return x+y;
+    }
+    console.log(add()); // prints?
+    console.log(add(1,2)); // prints?
+    console.log(add(2)); // prints?
+    document.getElementById('code').innerHTML=`${add()}<br>${add(1,2)}<br>${add(2)}<br>`;    
+  </script>
+
+</body>
+</html>

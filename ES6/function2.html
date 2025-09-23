@@ -1,0 +1,17 @@
+<html>  
+<head>
+    <script>   
+
+        console.log(add(1,2)); // OK! add was HOISTED
+        
+        function add(x,y) { 
+            return x+y;
+        }
+
+        document.getElementById('code').innerHTML=add(1,2);
+  </script>
+</head>
+<body>
+  <code id='code'></code>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<html>  
+<head>
+</head>
+<body>
+  <code id='code'></code>
+
+<script>   
+    const club = {"name":"FC Barcelona", sponsor:"Rakuten"};
+    // const club = {"name":"FC Barcelona", sponsor:"Nike"}; // ERROR
+    club.sponsor="Nike";
+    console.log(club);
+    document.getElementById('code').innerHTML=`{name: "FC Barcelona", sponsor: "Nike"} ["Audi", "BMW", "VW"]`;
+
+    const cars = ["Audi", "BMW", "Skoda"];
+    cars[2]="VW";
+    console.log(cars);
+
+</script>
+
+</body>
+</html>
